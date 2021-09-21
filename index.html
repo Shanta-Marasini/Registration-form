@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registration form</title>
+    <style>
+      .wrapper {
+        margin: 0 auto;
+        width: 70%;
+        border: 2px solid grey;
+        padding: 10px 20px;
+      }
+      h1 {
+        text-align: center;
+      }
+      input {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Form Registration of Patan</h1>
+      <form action="info.html">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="name">Name</label> <br />
+          <input type="text" placeholder="First name" />
+          <input type="text" placeholder="Middle name" />
+          <input type="text" placeholder="Last name" /> <br />
+          <br />
+
+          <label for="rollno"> College Roll Number</label> <br />
+          <input type="number" placeholder="What's your roll number" /> <br />
+          <br />
+
+          <label for="email"> Email</label> <br />
+          <input type="email" placeholder="Enter your email" /> <br />
+          <br />
+
+          <label for="username"> Username</label> <br />
+          <input type="text" placeholder="Keep unique and short" /> <br />
+          <br />
+
+          <label for="password"> Password</label><br />
+          <input type="password" placeholder="Enter your password here" />
+          <br />
+          <br />
+        </fieldset>
+
+        <br />
+        <label for="gender">Gender</label> <br />
+        <input type="radio" name="gender" value="male" id="" />Male
+        <input type="radio" name="gender" value="female" id="" />Female
+        <input type="radio" name="gender" value="other" id="" />Other <br />
+        <br />
+
+        <label for="language">Which languages do you prefer?</label><br />
+        <input type="checkbox" name="language" value="nepali" checked />Nepali
+        <br />
+        <input type="checkbox" name="language" value="english" />English <br />
+        <input type="checkbox" name="language" value="hindi" />Hindi <br />
+        <input type="checkbox" name="language" value="chinese" />Chinese <br />
+        <br />
+
+        <label for="country"> Country</label> <br />
+        <select name="country" id="country">
+          <option value="nepal" selected>Nepal</option>
+          <option value="india"> India</option>
+          <option value="india"> India</option>
+          <option value="india"> India</option>
+          <option value="india"> India</option>
+          <option value="india"> India</option>
+        </select>
+        <br />
+        <br />
+        <label for="birthday"> Birthday</label> <br />
+        <input type="date" /> <br />
+        <br />
+
+        <label for="cv"> Upload your CV</label><br />
+        <input type="file" /><br />
+        <br />
+
+        <label for="cv"> Upload your image</label><br />
+        <input type="file" /><br />
+        <br />
+
+        <fieldset>
+          <legend>Personal views</legend>
+          <label for="color"> Select your favourite Color</label> <br />
+          <input type="color" value="#000000" /> <br />
+          <br />
+          <label for="rate">Rate our college</label> <br />
+          <input type="range" /> <br />
+          <br />
+        </fieldset>
+        <br />
+
+        <label for="textarea"> If any queries feel free to ask...</label><br />
+        <br />
+        <textarea name="queries" id="queries" cols="130" rows="10"></textarea>
+        <br /><br />
+
+        <input type="submit" />
+        <input type="reset" /><br />
+        <br />
+      </form>
+    </div>
+  </body>
+</html>
